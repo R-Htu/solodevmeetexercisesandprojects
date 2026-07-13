@@ -1,6 +1,10 @@
-// MONGODB_URI is a real credential (unlike the Firebase config above) — it
-// must stay out of source control. Set it in your local .env file, which
-// .gitignore already excludes from git.
+// This database and its credentials are public on purpose — anyone learning
+// on SoloDevMeet is meant to use it, no signup required. It runs on a free
+// tier with no billing attached and never will, so the worst case if it's
+// ever abused is the practice data getting reset, not a bill.
+// MONGODB_URI itself still stays out of source control (see .env.example) —
+// not because it's secret, but so each learner's local .env is the one
+// source of truth instead of everyone editing this file.
 import { MongoClient } from 'mongodb';
 
 const uri = process.env.MONGODB_URI;

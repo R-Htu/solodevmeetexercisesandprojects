@@ -4,6 +4,8 @@ A backend starter for [SoloDevMeet](https://www.solodevmeet.com/) exercises and 
 
 This is a **shared practice sandbox**, not your own private database:
 
+- Both the MongoDB database and the Firebase project are **public on purpose** — they exist so anyone learning on SoloDevMeet can see real output with no signup or setup. You're not "leaking" anything by using the credentials already in this repo; that's the intended use.
+- Both run on free tiers with **no billing attached, and none will ever be added** — so there's no risk of a surprise bill, no matter what happens to them.
 - It's for testing and learning only — don't build anything real on it, and don't expect data to stick around forever.
 - Everyone using this starter reads and writes the same MongoDB collection and Firestore project, so every document you create should include an `owner` field (your name, or any string unique to you) and every read should filter by it. The example routes already do this — copy the pattern.
 - If it ever gets abused or exhausts its free-tier quota, it may need to be reset — that only affects practice data, never your real projects.

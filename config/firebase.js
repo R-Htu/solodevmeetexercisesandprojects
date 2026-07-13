@@ -4,6 +4,11 @@
 // This points at a shared SoloDevMeet PRACTICE project, separate from any
 // real app's production data — everything here lives under the top-level
 // "practice" collection.
+//
+// This project is public on purpose, for anyone learning on SoloDevMeet to
+// use freely, no signup required. It's on Firebase's free Spark plan with
+// no billing attached and never will be, so there's no risk of a bill —
+// worst case is the practice data getting reset if it's ever abused.
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
